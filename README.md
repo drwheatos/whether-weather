@@ -1,4 +1,6 @@
 Whether Weather 
+
+
 This is Whether Weather, a weather forecasting website I built for my web development project. The idea is just to have a site that shows the weather for different cities, using hardcoded data.
 What It Does
 Shows current weather for a city
