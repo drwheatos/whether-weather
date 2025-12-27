@@ -1,0 +1,80 @@
+---
+layout: layouts/base.njk
+title: Settings
+---
+
+<main class="container mt-6">
+
+  <!-- Page Title -->
+  <h1 class="title is-2 has-text-centered has-text-warning"
+      style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+    Settings
+  </h1>
+
+  <div class="columns is-multiline mt-6">
+
+    <!-- Favourite Cities -->
+    <div class="column is-half">
+      <div class="box" style="background-color: rgba(0,0,0,0.25); border-radius: 15px;">
+        <h2 class="title is-4 has-text-warning"
+            style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+          Favourite Cities
+        </h2>
+
+        {% set cities = ["Dublin", "London", "Paris", "Madrid", "Berlin", "Rome"] %}
+        {% for city in cities %}
+        <div class="field is-flex is-align-items-center mb-3">
+
+          <!-- Toggle Switch -->
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+
+          <!-- Label Text -->
+          <span class="ml-3 has-text-warning">{{ city }}</span>
+
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+    <!-- User Preferences -->
+    <div class="column is-half">
+      <div class="box" style="background-color: rgba(0,0,0,0.25); border-radius: 15px;">
+        <h2 class="title is-4 has-text-warning"
+            style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+          User Preferences
+        </h2>
+
+        {% set preferences = ["Celsius", "Fahrenheit", "Km/h", "Mp/h", "Dark Mode", "Live Updates"] %}
+        {% for pref in preferences %}
+        <div class="field is-flex is-align-items-center mb-3">
+
+          <!-- Toggle Switch -->
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+
+          <!-- Label Text -->
+          <span class="ml-3 has-text-warning">{{ pref }}</span>
+
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+
+
+
+
+
+
+

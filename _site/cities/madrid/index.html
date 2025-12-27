@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrid</title>
+
+    <!-- bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <!-- navbar -->
+<nav class="navbar is-transparent has-shadow">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/images/logo.png" class="logo-img" alt="Whether Weather Logo">
+    </a>
+
+    <!-- menu -->
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+    </a>
+  </div>
+
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item has-text-white has-text-weight-bold" href="/">Home</a>
+      <a class="navbar-item has-text-white has-text-weight-bold" href="/dashboard/">Dashboard</a>
+      <a class="navbar-item has-text-white has-text-weight-bold" href="/settings/">Settings</a>
+    </div>
+  </div>
+</nav>
+
+
+   
+    <main class="container mt-6">
+        
+
+
+<main class="container mt-6">
+
+  <h1 class="title is-1 has-text-centered has-text-warning"
+      style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+      Madrid
+  </h1>
+
+  <p class="subtitle is-3 has-text-centered has-text-warning mb-6"
+     style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+     Today's Weather
+  </p>
+
+  <div class="box has-text-centered mb-6"
+       style="background-color: rgba(0,0,0,0.25); border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+    <span class="weather-emoji mb-2"
+          style="font-size: 5rem; -webkit-text-stroke: 1px #000;">
+      ☀️
+    </span>
+
+    <p class="has-text-warning mb-1 is-size-3 has-text-weight-bold"
+       style="-webkit-text-stroke: 0.5px #000;">
+       Condition: Sunny
+    </p>
+
+    <p class="has-text-warning mb-1 is-size-3 has-text-weight-bold"
+       style="-webkit-text-stroke: 0.5px #000;">
+       Max Temperature: 30°C
+    </p>
+
+    <p class="has-text-warning mb-1 is-size-3 has-text-weight-bold"
+       style="-webkit-text-stroke: 0.5px #000;">
+       Wind Speed: 4 km/h
+    </p>
+
+    <p class="has-text-warning mb-1 is-size-3 has-text-weight-bold"
+       style="-webkit-text-stroke: 0.5px #000;">
+       Precipitation: Low
+    </p>
+  </div>
+
+  <h2 class="title is-3 has-text-centered has-text-warning mb-4"
+      style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+      7-Day Forecast
+  </h2>
+
+  <div class="columns is-multiline is-mobile is-centered">
+    
+    <div class="column is-one-seventh-desktop is-half-mobile mb-3">
+      <div class="box has-text-centered forecast-card"
+           style="background-color: rgba(255,255,255,0.25); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+        <p class="day-name is-size-4 has-text-warning mb-2"
+           style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+           Mon
+        </p>
+
+        <span class="weather-emoji mb-2"
+              style="font-size: 3rem; -webkit-text-stroke: 1px #000;">
+          ☀️
+        </span>
+
+        <p class="has-text-white is-size-5 has-text-weight-bold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Max: 30°C
+        </p>
+
+        <p class="has-text-white is-size-6 has-text-weight-semibold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Wind: 4 km/h
+        </p>
+      </div>
+    </div>
+    
+    <div class="column is-one-seventh-desktop is-half-mobile mb-3">
+      <div class="box has-text-centered forecast-card"
+           style="background-color: rgba(255,255,255,0.25); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+        <p class="day-name is-size-4 has-text-warning mb-2"
+           style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+           Tue
+        </p>
+
+        <span class="weather-emoji mb-2"
+              style="font-size: 3rem; -webkit-text-stroke: 1px #000;">
+          ☀️
+        </span>
+
+        <p class="has-text-white is-size-5 has-text-weight-bold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Max: 30°C
+        </p>
+
+        <p class="has-text-white is-size-6 has-text-weight-semibold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Wind: 4 km/h
+        </p>
+      </div>
+    </div>
+    
+    <div class="column is-one-seventh-desktop is-half-mobile mb-3">
+      <div class="box has-text-centered forecast-card"
+           style="background-color: rgba(255,255,255,0.25); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+        <p class="day-name is-size-4 has-text-warning mb-2"
+           style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+           Wed
+        </p>
+
+        <span class="weather-emoji mb-2"
+              style="font-size: 3rem; -webkit-text-stroke: 1px #000;">
+          ☀️
+        </span>
+
+        <p class="has-text-white is-size-5 has-text-weight-bold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Max: 31°C
+        </p>
+
+        <p class="has-text-white is-size-6 has-text-weight-semibold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Wind: 5 km/h
+        </p>
+      </div>
+    </div>
+    
+    <div class="column is-one-seventh-desktop is-half-mobile mb-3">
+      <div class="box has-text-centered forecast-card"
+           style="background-color: rgba(255,255,255,0.25); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+        <p class="day-name is-size-4 has-text-warning mb-2"
+           style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+           Thu
+        </p>
+
+        <span class="weather-emoji mb-2"
+              style="font-size: 3rem; -webkit-text-stroke: 1px #000;">
+          ⛅
+        </span>
+
+        <p class="has-text-white is-size-5 has-text-weight-bold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Max: 30°C
+        </p>
+
+        <p class="has-text-white is-size-6 has-text-weight-semibold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Wind: 4 km/h
+        </p>
+      </div>
+    </div>
+    
+    <div class="column is-one-seventh-desktop is-half-mobile mb-3">
+      <div class="box has-text-centered forecast-card"
+           style="background-color: rgba(255,255,255,0.25); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+        <p class="day-name is-size-4 has-text-warning mb-2"
+           style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+           Fri
+        </p>
+
+        <span class="weather-emoji mb-2"
+              style="font-size: 3rem; -webkit-text-stroke: 1px #000;">
+          ⛅
+        </span>
+
+        <p class="has-text-white is-size-5 has-text-weight-bold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Max: 29°C
+        </p>
+
+        <p class="has-text-white is-size-6 has-text-weight-semibold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Wind: 3 km/h
+        </p>
+      </div>
+    </div>
+    
+    <div class="column is-one-seventh-desktop is-half-mobile mb-3">
+      <div class="box has-text-centered forecast-card"
+           style="background-color: rgba(255,255,255,0.25); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+        <p class="day-name is-size-4 has-text-warning mb-2"
+           style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+           Sat
+        </p>
+
+        <span class="weather-emoji mb-2"
+              style="font-size: 3rem; -webkit-text-stroke: 1px #000;">
+          ☀️
+        </span>
+
+        <p class="has-text-white is-size-5 has-text-weight-bold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Max: 30°C
+        </p>
+
+        <p class="has-text-white is-size-6 has-text-weight-semibold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Wind: 4 km/h
+        </p>
+      </div>
+    </div>
+    
+    <div class="column is-one-seventh-desktop is-half-mobile mb-3">
+      <div class="box has-text-centered forecast-card"
+           style="background-color: rgba(255,255,255,0.25); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+        <p class="day-name is-size-4 has-text-warning mb-2"
+           style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+           Sun
+        </p>
+
+        <span class="weather-emoji mb-2"
+              style="font-size: 3rem; -webkit-text-stroke: 1px #000;">
+          ☀️
+        </span>
+
+        <p class="has-text-white is-size-5 has-text-weight-bold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Max: 31°C
+        </p>
+
+        <p class="has-text-white is-size-6 has-text-weight-semibold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Wind: 5 km/h
+        </p>
+      </div>
+    </div>
+    
+  </div>
+
+</main>
+
+
+
+    </main>
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,92 @@
+---
+layout: layouts/base.njk
+title: Madrid
+---
+
+{% set forecast = [
+  { day: "Mon", temp: 30, wind: 4, emoji: "☀️" },
+  { day: "Tue", temp: 30, wind: 4, emoji: "☀️" },
+  { day: "Wed", temp: 31, wind: 5, emoji: "☀️" },
+  { day: "Thu", temp: 30, wind: 4, emoji: "⛅" },
+  { day: "Fri", temp: 29, wind: 3, emoji: "⛅" },
+  { day: "Sat", temp: 30, wind: 4, emoji: "☀️" },
+  { day: "Sun", temp: 31, wind: 5, emoji: "☀️" }
+] %}
+
+<main class="container mt-6">
+
+  <h1 class="title is-1 has-text-centered has-text-warning"
+      style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+      Madrid
+  </h1>
+
+  <p class="subtitle is-3 has-text-centered has-text-warning mb-6"
+     style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+     Today's Weather
+  </p>
+
+  <div class="box has-text-centered mb-6"
+       style="background-color: rgba(0,0,0,0.25); border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.5);">
+    <span class="weather-emoji mb-2"
+          style="font-size: 5rem; -webkit-text-stroke: 1px #000;">
+      {{ forecast[0].emoji }}
+    </span>
+
+    <p class="has-text-warning mb-1 is-size-3 has-text-weight-bold"
+       style="-webkit-text-stroke: 0.5px #000;">
+       Condition: Sunny
+    </p>
+
+    <p class="has-text-warning mb-1 is-size-3 has-text-weight-bold"
+       style="-webkit-text-stroke: 0.5px #000;">
+       Max Temperature: 30°C
+    </p>
+
+    <p class="has-text-warning mb-1 is-size-3 has-text-weight-bold"
+       style="-webkit-text-stroke: 0.5px #000;">
+       Wind Speed: 4 km/h
+    </p>
+
+    <p class="has-text-warning mb-1 is-size-3 has-text-weight-bold"
+       style="-webkit-text-stroke: 0.5px #000;">
+       Precipitation: Low
+    </p>
+  </div>
+
+  <h2 class="title is-3 has-text-centered has-text-warning mb-4"
+      style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+      7-Day Forecast
+  </h2>
+
+  <div class="columns is-multiline is-mobile is-centered">
+    {% for day in forecast %}
+    <div class="column is-one-seventh-desktop is-half-mobile mb-3">
+      <div class="box has-text-centered forecast-card"
+           style="background-color: rgba(255,255,255,0.25); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+        <p class="day-name is-size-4 has-text-warning mb-2"
+           style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+           {{ day.day }}
+        </p>
+
+        <span class="weather-emoji mb-2"
+              style="font-size: 3rem; -webkit-text-stroke: 1px #000;">
+          {{ day.emoji }}
+        </span>
+
+        <p class="has-text-white is-size-5 has-text-weight-bold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Max: {{ day.temp }}°C
+        </p>
+
+        <p class="has-text-white is-size-6 has-text-weight-semibold mb-1"
+           style="-webkit-text-stroke: 0.5px #000;">
+           Wind: {{ day.wind }} km/h
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</main>
+
+
