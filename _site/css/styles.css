@@ -20,13 +20,13 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 .navbar-item.has-text-white:hover {
-    color: #ffeb3b; /* sunshine yellow on hover */
+    color: #FFD84D; /* yellow on hover */
     transition: all 0.3s ease;
 }
 
 /* headings */
 h1, h2, h3 {
-    color: #FFD84D; /* sunshine yellow */
+    color: #FFD84D; /* yellow */
     text-shadow:
         -1px -1px 0 #000,
          1px -1px 0 #000,
@@ -70,10 +70,9 @@ h3 {
 }
 
 .current-weather-box p {
-    font-size: 1.3rem; /* increased size for readability */
-    font-weight: 700;  /* bold for emphasis */
-    text-shadow: 1px 1px 2px #000; /* subtle shadow for visibility */
-    margin: 5px 0;
+    font-size: 1.3rem; 
+    font-weight: 700;  
+    text-shadow: 1px 1px 2px #000; 
 }
 
 .current-weather-box:hover {
